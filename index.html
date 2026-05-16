@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2f6849">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Alpha Hemp Brasil — Cannabis Medicinal com Protocolo Exclusivo</title>
+<meta name="description" content="Tratamento com Cannabis Medicinal legalizado pela Anvisa. Protocolo Hemp System exclusivo: integração do sistema endocanabinoide com os 7 chakras. Consultoria especializada com suporte médico completo.">
+<meta property="og:title" content="Alpha Hemp Brasil — Cannabis Medicinal com Protocolo Exclusivo">
+<meta property="og:description" content="Tratamento 100% legalizado. Retome sua qualidade de vida com o Protocolo Hemp System.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #faf8f3;
+    --bg-soft: #f3efe6;
+    --bg-card: #ffffff;
+    --bg-dark: #1a2620;
+    --leaf: #2f6849;
+    --leaf-deep: #1f4530;
+    --leaf-soft: #e8efe6;
+    --gold: #a07a3c;
+    --text: #1a201c;
+    --text-soft: #4a5550;
+    --text-mute: #8a8f8a;
+    --border: #e3ddd0;
+    --border-strong: #cfc7b6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 1.75rem; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    padding: 1rem 0;
+    background: rgba(250, 248, 243, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 1.75rem; }
+  .logo { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--text); text-decoration: none; display: inline-flex; align-items: baseline; gap: 0.35rem; }
+  .logo em { font-style: italic; color: var(--leaf); font-weight: 400; }
+  .logo .brasil { color: var(--text-soft); font-weight: 400; font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'Inter', sans-serif; margin-left: 0.4rem; }
+  .nav-links { display: flex; gap: 2.25rem; list-style: none; }
+  .nav-links a { color: var(--text-soft); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.3s; }
+  .nav-links a:hover { color: var(--leaf); }
+  .nav-cta { background: var(--leaf); color: white; padding: 0.65rem 1.35rem; border-radius: 100px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.3s; border: none; cursor: pointer; font-family: inherit; }
+  .nav-cta:hover { background: var(--leaf-deep); transform: translateY(-1px); }
+  .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; color: var(--text); }
+
+  /* Mobile dropdown menu */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0; right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem 1.5rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    z-index: 49;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.85rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .mobile-menu a:last-of-type { border-bottom: none; }
+  .mobile-menu-cta {
+    background: var(--leaf);
+    color: white;
+    border: none;
+    padding: 0.95rem 1.4rem;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  /* HERO */
+  .hero { padding: 8rem 0 5rem; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -10%; right: -15%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(47, 104, 73, 0.06), transparent 70%); border-radius: 50%; pointer-events: none; }
+  .hero-inner { max-width: 900px; position: relative; z-index: 1; }
+  .badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.95rem; background: var(--leaf-soft); border: 1px solid rgba(47, 104, 73, 0.2); border-radius: 100px; font-size: 0.78rem; color: var(--leaf-deep); font-weight: 500; margin-bottom: 1.75rem; }
+  .badge-dot { width: 6px; height: 6px; background: var(--leaf); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2.25rem, 5.5vw, 4.25rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; color: var(--text); }
+  .hero h1 em { font-style: italic; color: var(--leaf); font-weight: 400; }
+  .hero .lead { font-size: 1.15rem; color: var(--text-soft); margin-bottom: 2.5rem; max-width: 38rem; line-height: 1.65; }
+  .hero-ctas { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 3.5rem; }
+
+  .btn-primary { background: var(--leaf); color: white; padding: 0.95rem 1.6rem; border-radius: 100px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; font-family: inherit; }
+  .btn-primary:hover { background: var(--leaf-deep); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(31, 69, 48, 0.18); }
+  .btn-secondary { color: var(--text); padding: 0.95rem 1.4rem; text-decoration: none; font-weight: 500; font-size: 0.95rem; border: 1px solid var(--border-strong); border-radius: 100px; transition: all 0.3s; background: transparent; cursor: pointer; font-family: inherit; }
+  .btn-secondary:hover { background: white; border-color: var(--leaf); color: var(--leaf); }
+
+  /* Trust strip */
+  .trust-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .trust-cell { display: flex; flex-direction: column; gap: 0.3rem; }
+  .trust-cell .icon { color: var(--leaf); margin-bottom: 0.5rem; }
+  .trust-cell .label { font-size: 0.72rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+  .trust-cell .value { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--text); font-weight: 500; }
+
+  section { padding: 5.5rem 0; position: relative; }
+  .section-eyebrow { display: inline-block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--leaf); margin-bottom: 1rem; font-weight: 600; }
+  .section-title { font-family: 'Fraunces', serif; font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.025em; color: var(--text); margin-bottom: 1.25rem; max-width: 28ch; }
+  .section-title em { font-style: italic; color: var(--leaf); font-weight: 400; }
+  .section-lead { font-size: 1.08rem; color: var(--text-soft); max-width: 42rem; margin-bottom: 3.5rem; line-height: 1.65; }
+
+  /* JORNADA */
+  .jornada { background: var(--bg-soft); }
+  .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+  .step { padding: 2rem 1.5rem; background: white; border: 1px solid var(--border); border-radius: 12px; transition: all 0.4s; }
+  .step:hover { border-color: var(--leaf); transform: translateY(-3px); box-shadow: 0 12px 24px rgba(31, 69, 48, 0.06); }
+  .step-num { font-family: 'Fraunces', serif; font-size: 0.85rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; display: block; font-weight: 500; }
+  .step h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.2rem; color: var(--text); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+  .step p { font-size: 0.9rem; color: var(--text-soft); line-height: 1.55; }
+
+  /* INDICAÇÕES */
+  .indications-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .ind-card { padding: 2rem 1.6rem; border: 1px solid var(--border); border-radius: 12px; background: white; transition: all 0.4s; }
+  .ind-card:hover { border-color: var(--leaf); transform: translateY(-3px); box-shadow: 0 10px 24px rgba(31, 69, 48, 0.06); }
+  .ind-icon { width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; background: var(--leaf-soft); border-radius: 10px; margin-bottom: 1.1rem; color: var(--leaf); }
+  .ind-card h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.18rem; color: var(--text); margin-bottom: 0.45rem; }
+  .ind-card p { font-size: 0.9rem; color: var(--text-soft); line-height: 1.55; }
+  .ind-card.featured { background: var(--bg-dark); border-color: var(--bg-dark); color: white; }
+  .ind-card.featured h3 { color: white; }
+  .ind-card.featured p { color: rgba(255,255,255,0.7); }
+  .ind-card.featured .ind-icon { background: rgba(255,255,255,0.08); color: #c9b988; }
+  .ind-card.featured a { color: #c9b988; text-decoration: none; font-weight: 500; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; }
+
+  /* PROTOCOLO */
+  .protocolo { background: var(--bg-dark); color: white; overflow: hidden; position: relative; }
+  .protocolo::before { content: ''; position: absolute; top: 50%; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(160, 122, 60, 0.08), transparent 70%); border-radius: 50%; transform: translateY(-50%); pointer-events: none; }
+  .protocolo-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4.5rem; align-items: center; position: relative; z-index: 1; }
+  .protocolo .section-eyebrow { color: #c9b988; }
+  .protocolo .section-title { color: white; }
+  .protocolo .section-title em { color: #c9b988; }
+  .protocolo p { color: rgba(255,255,255,0.75); font-size: 1.02rem; margin-bottom: 1.4rem; line-height: 1.7; }
+  .protocolo p strong { color: white; font-weight: 500; }
+  .protocolo p em { color: #c9b988; font-style: italic; }
+  .protocolo-visual { aspect-ratio: 1; position: relative; display: flex; align-items: center; justify-content: center; max-width: 400px; margin: 0 auto; }
+  .protocolo-visual svg { width: 100%; height: 100%; }
+  .protocol-features { display: grid; gap: 1rem; margin-top: 2rem; }
+  .protocol-feature { display: flex; gap: 1rem; padding: 1.1rem 1.25rem; background: rgba(255,255,255,0.04); border-left: 2px solid #c9b988; border-radius: 0 6px 6px 0; }
+  .protocol-feature .pf-icon { color: #c9b988; flex-shrink: 0; margin-top: 2px; }
+  .protocol-feature h4 { font-family: 'Fraunces', serif; font-weight: 500; color: white; margin-bottom: 0.25rem; font-size: 1rem; }
+  .protocol-feature p { font-size: 0.88rem; color: rgba(255,255,255,0.65); margin: 0; line-height: 1.55; }
+
+  /* PRODUTOS */
+  .produtos { background: var(--bg-soft); }
+  .produtos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; margin-top: 1rem; }
+  .produto-card { background: white; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.4s; display: flex; flex-direction: column; }
+  .produto-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(31, 69, 48, 0.08); border-color: var(--leaf); }
+  .produto-visual { aspect-ratio: 16/10; background: linear-gradient(135deg, var(--leaf-soft) 0%, var(--bg-soft) 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border-bottom: 1px solid var(--border); padding: 1.5rem; }
+  .produto-img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.5s; }
+  .produto-card:hover .produto-img { transform: scale(1.05); }
+  .produto-content { padding: 1.75rem; flex-grow: 1; display: flex; flex-direction: column; }
+  .produto-tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--leaf); margin-bottom: 0.75rem; font-weight: 600; }
+  .produto-content h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.45rem; color: var(--text); margin-bottom: 0.5rem; }
+  .produto-content .desc { font-size: 0.92rem; color: var(--text-soft); margin-bottom: 1.25rem; line-height: 1.55; flex-grow: 1; }
+  .produto-specs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .produto-spec { font-size: 0.72rem; padding: 0.3rem 0.7rem; background: var(--leaf-soft); color: var(--leaf-deep); border-radius: 100px; font-weight: 500; }
+  .produto-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  .produto-price { font-family: 'Fraunces', serif; font-size: 1.15rem; color: var(--text); font-weight: 500; }
+  .produto-cta { background: var(--leaf); color: white; padding: 0.6rem 1.1rem; border-radius: 100px; text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: all 0.3s; }
+  .produto-cta:hover { background: var(--leaf-deep); }
+
+  /* SERVIÇOS */
+  .servicos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .servico { padding: 2.25rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 14px; transition: all 0.4s; display: flex; flex-direction: column; }
+  .servico:hover { transform: translateY(-3px); border-color: var(--leaf); box-shadow: 0 14px 28px rgba(31, 69, 48, 0.06); }
+  .servico.highlight { background: var(--bg-dark); border-color: var(--bg-dark); color: white; }
+  .servico.highlight h3 { color: white; }
+  .servico.highlight .desc { color: rgba(255,255,255,0.7); }
+  .servico.highlight .price { color: #c9b988; }
+  .servico.highlight .servico-tag { color: #c9b988; }
+  .servico.highlight .servico-cta { background: #c9b988; color: var(--bg-dark); border-color: #c9b988; }
+  .servico.highlight .servico-cta:hover { background: white; border-color: white; }
+  .servico-tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--leaf); margin-bottom: 0.85rem; font-weight: 600; }
+  .servico h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.4rem; color: var(--text); margin-bottom: 0.45rem; }
+  .servico .desc { font-size: 0.9rem; color: var(--text-soft); margin-bottom: 1.75rem; line-height: 1.55; flex-grow: 1; }
+  .servico .price { font-family: 'Fraunces', serif; font-size: 2rem; color: var(--leaf-deep); margin-bottom: 1.5rem; line-height: 1; font-weight: 500; }
+  .servico .price .currency { font-size: 1rem; color: var(--text-mute); margin-right: 0.2rem; vertical-align: super; }
+  .price-consult { font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--leaf-deep); margin-bottom: 1.5rem; line-height: 1; font-weight: 500; font-style: italic; }
+  .servico-cta { background: transparent; color: var(--text); border: 1px solid var(--border-strong); padding: 0.8rem 1.15rem; border-radius: 100px; text-decoration: none; text-align: center; font-size: 0.88rem; font-weight: 500; transition: all 0.3s; cursor: pointer; font-family: inherit; }
+  .servico-cta:hover { background: var(--leaf); color: white; border-color: var(--leaf); }
+
+  /* FAQ */
+  .faq { background: var(--bg-soft); }
+  .faq-list { max-width: 52rem; }
+  .faq-item { background: white; border: 1px solid var(--border); border-radius: 10px; margin-bottom: 0.75rem; overflow: hidden; transition: all 0.3s; }
+  .faq-item:hover { border-color: var(--border-strong); }
+  .faq-question { width: 100%; background: none; border: none; color: var(--text); font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 500; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.35rem 1.6rem; }
+  .faq-question .icon { color: var(--leaf); transition: transform 0.3s; flex-shrink: 0; }
+  .faq-item.open .faq-question .icon { transform: rotate(45deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; color: var(--text-soft); font-size: 0.95rem; line-height: 1.7; padding: 0 1.6rem; }
+  .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 1.5rem; }
+
+  /* CTA FINAL */
+  .cta-final { background: var(--leaf-deep); color: white; text-align: center; position: relative; overflow: hidden; }
+  .cta-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.06), transparent 70%); pointer-events: none; }
+  .cta-final-inner { max-width: 48rem; margin: 0 auto; position: relative; z-index: 1; }
+  .cta-final .section-eyebrow { color: #c9b988; }
+  .cta-final h2 { color: white; margin: 0 auto 1.25rem; }
+  .cta-final h2 em { color: #c9b988; }
+  .cta-final p { color: rgba(255,255,255,0.8); font-size: 1.08rem; margin-bottom: 2.25rem; }
+  .btn-quiz { background: white; color: var(--leaf-deep); font-weight: 600; padding: 1.1rem 2rem; border-radius: 100px; border: none; cursor: pointer; font-size: 1rem; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.6rem; font-family: inherit; }
+  .btn-quiz:hover { background: #c9b988; transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.2); }
+
+  /* FOOTER */
+  footer { background: #131815; color: rgba(255,255,255,0.6); padding: 4rem 0 2rem; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-brand .logo { color: white; }
+  .footer-brand p { color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-top: 1rem; max-width: 24rem; line-height: 1.6; }
+  .footer-col h4 { font-family: 'Fraunces', serif; font-weight: 500; color: white; margin-bottom: 1rem; font-size: 1rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 0.6rem; }
+  .footer-col a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.88rem; transition: color 0.3s; }
+  .footer-col a:hover { color: #c9b988; }
+  .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+  .footer-disclaimer { max-width: 100%; margin-top: 1.5rem; font-size: 0.78rem; color: rgba(255,255,255,0.4); line-height: 1.6; font-style: italic; }
+
+  /* WHATSAPP FLOAT */
+  .wa-float { position: fixed; bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); right: 1.5rem; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35); z-index: 40; transition: all 0.3s; }
+  .wa-float:hover { transform: scale(1.08); }
+  .wa-float svg { width: 28px; height: 28px; }
+
+  /* MODAL QUIZ */
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(26, 38, 32, 0.6); backdrop-filter: blur(8px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 1rem; }
+  .modal-backdrop.active { display: flex; }
+  .modal { background: var(--bg); border-radius: 18px; max-width: 580px; width: 100%; max-height: 92vh; overflow-y: auto; position: relative; box-shadow: 0 24px 60px rgba(0,0,0,0.25); }
+  .modal-close { position: absolute; top: 1rem; right: 1rem; background: var(--bg-soft); border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text-soft); transition: all 0.2s; z-index: 2; }
+  .modal-close:hover { background: var(--border); color: var(--text); }
+  .modal-header { padding: 2rem 2rem 1rem; border-bottom: 1px solid var(--border); }
+  .modal-progress { display: flex; gap: 0.4rem; margin-bottom: 1.25rem; }
+  .progress-dot { height: 4px; flex: 1; background: var(--border); border-radius: 100px; transition: background 0.3s; }
+  .progress-dot.active { background: var(--leaf); }
+  .modal-header h3 { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 500; color: var(--text); letter-spacing: -0.01em; margin-bottom: 0.3rem; }
+  .modal-header p { font-size: 0.9rem; color: var(--text-soft); }
+  .modal-body { padding: 1.5rem 2rem; }
+  .quiz-step { display: none; }
+  .quiz-step.active { display: block; animation: fadeIn 0.3s; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .quiz-label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text); margin-bottom: 0.85rem; }
+  .quiz-label .req { color: #c0413a; }
+  .quiz-options { display: grid; gap: 0.55rem; margin-bottom: 1.25rem; }
+  .quiz-options.two-col { grid-template-columns: 1fr 1fr; }
+  .quiz-option { padding: 0.85rem 1rem; background: white; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-size: 0.92rem; color: var(--text); transition: all 0.2s; display: flex; align-items: center; gap: 0.7rem; text-align: left; font-family: inherit; }
+  .quiz-option:hover { border-color: var(--leaf); background: var(--leaf-soft); }
+  .quiz-option.selected { border-color: var(--leaf); background: var(--leaf-soft); color: var(--leaf-deep); font-weight: 500; }
+  .quiz-option .check { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--border-strong); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; }
+  .quiz-option.selected .check { border-color: var(--leaf); background: var(--leaf); }
+  .quiz-option.selected .check::after { content: ''; width: 8px; height: 8px; background: white; border-radius: 50%; }
+  .quiz-input, .quiz-textarea { width: 100%; padding: 0.85rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; font-size: 16px; color: var(--text); background: white; font-family: inherit; transition: border 0.2s; margin-bottom: 1rem; -webkit-appearance: none; appearance: none; }
+  .quiz-input:focus, .quiz-textarea:focus { outline: none; border-color: var(--leaf); }
+  .quiz-textarea { resize: vertical; min-height: 80px; }
+  .quiz-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .modal-footer { padding: 1.25rem 2rem 1.75rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; gap: 1rem; }
+  .quiz-btn { padding: 0.85rem 1.4rem; border-radius: 100px; font-weight: 500; font-size: 0.9rem; cursor: pointer; border: none; transition: all 0.2s; font-family: inherit; }
+  .quiz-btn-prev { background: transparent; color: var(--text-soft); border: 1px solid var(--border-strong); }
+  .quiz-btn-prev:hover { background: var(--bg-soft); }
+  .quiz-btn-next { background: var(--leaf); color: white; margin-left: auto; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .quiz-btn-next:hover { background: var(--leaf-deep); }
+  .quiz-btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
+  .quiz-btn-submit { background: #25D366; color: white; margin-left: auto; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .quiz-btn-submit:hover { background: #1ea855; }
+  .quiz-btn-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+  .quiz-privacy { font-size: 0.78rem; color: var(--text-mute); text-align: center; padding: 0 2rem 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s, transform 0.7s; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Helpers de visibility */
+  .desktop-only { display: inline-flex; }
+
+  /* ===== TABLET ===== */
+  @media (max-width: 1024px) {
+    .container, .nav-inner { padding: 0 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    .indications-grid { grid-template-columns: 1fr 1fr; }
+    .servicos-grid { grid-template-columns: 1fr; max-width: 540px; }
+    section { padding: 4.5rem 0; }
+  }
+
+  /* ===== MOBILE ===== */
+  @media (max-width: 768px) {
+    .nav-links, .desktop-only { display: none; }
+    .menu-toggle { display: block; }
+    .hero { padding: 6rem 0 3rem; }
+    .hero h1 { font-size: clamp(2rem, 7vw, 2.75rem); }
+    .hero .lead { font-size: 1.05rem; }
+    .trust-strip { grid-template-columns: 1fr 1fr; gap: 1.25rem 1rem; padding: 1.5rem 0; }
+    .trust-cell .value { font-size: 0.95rem; }
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+    .indications-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .ind-card { padding: 1.5rem 1.25rem; }
+    .protocolo-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .protocolo-visual { max-width: 280px; order: -1; }
+    .produtos-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .section-title { font-size: clamp(1.6rem, 5vw, 2.25rem); }
+    .section-lead { margin-bottom: 2.5rem; }
+    section { padding: 3.5rem 0; }
+    /* WhatsApp float menor em mobile */
+    .wa-float { width: 52px; height: 52px; bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); right: 1rem; }
+    .wa-float svg { width: 24px; height: 24px; }
+  }
+
+  /* ===== SMALL MOBILE (iPhone padrão) ===== */
+  @media (max-width: 500px) {
+    .container, .nav-inner { padding: 0 1rem; }
+    .hero { padding: 5.5rem 0 2.5rem; }
+    .hero h1 { font-size: 2rem; line-height: 1.1; }
+    .badge { font-size: 0.7rem; padding: 0.35rem 0.8rem; }
+    .trust-strip { grid-template-columns: 1fr 1fr; gap: 1rem 0.75rem; }
+    .trust-cell .label { font-size: 0.66rem; letter-spacing: 0.08em; }
+    .trust-cell .value { font-size: 0.85rem; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .indications-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-ctas { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-secondary { justify-content: center; text-align: center; width: 100%; }
+    .modal-header, .modal-body, .modal-footer, .quiz-privacy { padding-left: 1.15rem; padding-right: 1.15rem; }
+    .modal-header { padding-top: 1.5rem; }
+    .quiz-options.two-col { grid-template-columns: 1fr; }
+    .quiz-row { grid-template-columns: 1fr; }
+    .quiz-row .quiz-input { margin-bottom: 0.75rem !important; }
+    .modal-footer { flex-direction: column-reverse; gap: 0.6rem; }
+    .quiz-btn-prev, .quiz-btn-next, .quiz-btn-submit { width: 100%; justify-content: center; margin-left: 0 !important; }
+    section { padding: 3rem 0; }
+    .servico { padding: 1.75rem 1.5rem; }
+    .price-consult { font-size: 1.2rem; }
+    .footer-disclaimer { font-size: 0.74rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      Alpha <em>Hemp</em><span class="brasil">Brasil</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#jornada">Jornada</a></li>
+      <li><a href="#indicacoes">Indicações</a></li>
+      <li><a href="#protocolo">Protocolo</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <button class="nav-cta desktop-only" onclick="openQuiz()">Avaliação gratuita</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu" onclick="toggleMenu()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <!-- Mobile dropdown menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#jornada" onclick="closeMenu()">Jornada</a>
+    <a href="#indicacoes" onclick="closeMenu()">Indicações</a>
+    <a href="#protocolo" onclick="closeMenu()">Protocolo</a>
+    <a href="#produtos" onclick="closeMenu()">Produtos</a>
+    <a href="#servicos" onclick="closeMenu()">Serviços</a>
+    <a href="#faq" onclick="closeMenu()">Dúvidas</a>
+    <button class="mobile-menu-cta" onclick="closeMenu(); openQuiz();">Avaliação gratuita</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Tratamento autorizado pela Anvisa · RDC 660/2022
+      </div>
+      <h1>Sua qualidade de vida, <em>cientificamente restaurada</em>.</h1>
+      <p class="lead">
+        Cannabis medicinal com acompanhamento médico especializado, importação legalizada e o exclusivo <strong>Protocolo Hemp System</strong> — método proprietário desenvolvido pela Alpha Hemp Brasil para resultados terapêuticos profundos e duradouros.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="openQuiz()">
+          Fazer avaliação gratuita
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+        <a href="#jornada" class="btn-secondary">Como funciona</a>
+      </div>
+    </div>
+
+    <div class="trust-strip">
+      <div class="trust-cell">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <span class="label">Autorização</span>
+        <span class="value">Anvisa RDC 660</span>
+      </div>
+      <div class="trust-cell">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
+        <span class="label">Extração</span>
+        <span class="value">Full Spectrum</span>
+      </div>
+      <div class="trust-cell">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <span class="label">Qualidade</span>
+        <span class="value">Laudo COA</span>
+      </div>
+      <div class="trust-cell">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <span class="label">Suporte</span>
+        <span class="value">Médico especialista</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="jornada" id="jornada">
+  <div class="container">
+    <span class="section-eyebrow">Como funciona</span>
+    <h2 class="section-title">Uma jornada <em>simplificada</em>, do primeiro contato à entrega.</h2>
+    <p class="section-lead">Cuidamos de toda a burocracia para que você foque no que importa: a sua saúde. Quatro etapas, acompanhamento humano em cada uma.</p>
+
+    <div class="steps-grid">
+      <div class="step reveal">
+        <span class="step-num">Etapa 01</span>
+        <h3>Avaliação médica</h3>
+        <p>Consulta com médico prescritor parceiro para compreender seu quadro clínico e definir a abordagem terapêutica.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">Etapa 02</span>
+        <h3>Prescrição precisa</h3>
+        <p>Definição da dosagem, concentração e formulação ideal para o seu organismo e sua necessidade específica.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">Etapa 03</span>
+        <h3>Autorização Anvisa</h3>
+        <p>Nossa equipe conduz todo o processo de liberação junto à agência, sem complicações ou dor de cabeça pra você.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">Etapa 04</span>
+        <h3>Entrega segura</h3>
+        <p>O medicamento chega importado, lacrado e com garantia de procedência diretamente à sua casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="indicacoes">
+  <div class="container">
+    <span class="section-eyebrow">Para quem é indicado</span>
+    <h2 class="section-title">A cannabis medicinal age no seu <em>sistema endocanabinoide</em>.</h2>
+    <p class="section-lead">Eficácia cientificamente comprovada no auxílio terapêutico de uma ampla gama de condições crônicas, neurológicas e psiquiátricas.</p>
+
+    <div class="indications-grid">
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+        <h3>Ansiedade e estresse</h3>
+        <p>Regula níveis de cortisol e promove sensação de calma e foco, sem os efeitos colaterais dos benzodiazepínicos.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Insônia severa</h3>
+        <p>Induz ciclos de sono profundos e contínuos. Sem ressaca medicamentosa, sem dependência química.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+        <h3>Dores crônicas</h3>
+        <p>Ação anti-inflamatória potente. Resultados em fibromialgia, artrite, artrose, enxaqueca e dores neuropáticas.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <h3>Doenças neurológicas</h3>
+        <p>Redução de tremores em Parkinson e diminuição significativa na frequência e intensidade de crises epilépticas.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>Autismo (TEA)</h3>
+        <p>Auxilia na redução de comportamentos agressivos e hiperatividade, com melhora na interação e qualidade de vida.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <h3>TDAH e depressão</h3>
+        <p>Apoio terapêutico no foco, regulação de humor e equilíbrio emocional, sem os efeitos adversos comuns aos psicotrópicos.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Câncer e cuidados paliativos</h3>
+        <p>Alívio de dor, náuseas decorrentes da quimioterapia, melhora do apetite e maior qualidade de vida durante o tratamento.</p>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.71"/></svg></div>
+        <h3>Doenças autoimunes</h3>
+        <p>Modulação da resposta inflamatória sistêmica. Apoio em lúpus, artrite reumatoide, Crohn e outras condições crônicas.</p>
+      </div>
+      <div class="ind-card featured reveal">
+        <div class="ind-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M12 9v6"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <h3>Sua condição não está aqui?</h3>
+        <p>Cada caso é avaliado individualmente. Faça a avaliação gratuita e descubra se o tratamento é indicado para você.</p>
+        <a href="#" onclick="openQuiz(); return false;">Quero conversar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="protocolo" id="protocolo">
+  <div class="container">
+    <div class="protocolo-grid">
+      <div class="protocolo-visual reveal">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Anéis concêntricos -->
+          <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(201, 185, 136, 0.1)" stroke-width="1"/>
+          <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(201, 185, 136, 0.16)" stroke-width="1"/>
+          <circle cx="200" cy="200" r="118" fill="none" stroke="rgba(201, 185, 136, 0.22)" stroke-width="1"/>
+          <circle cx="200" cy="200" r="86" fill="none" stroke="rgba(201, 185, 136, 0.3)" stroke-width="1"/>
+
+          <!-- Estrutura molecular abstrata (hexagonal) -->
+          <g stroke="rgba(201, 185, 136, 0.5)" stroke-width="1.2" fill="none">
+            <polygon points="200,140 252,170 252,230 200,260 148,230 148,170"/>
+            <line x1="200" y1="140" x2="200" y2="100"/>
+            <line x1="252" y1="170" x2="287" y2="150"/>
+            <line x1="252" y1="230" x2="287" y2="250"/>
+            <line x1="200" y1="260" x2="200" y2="300"/>
+            <line x1="148" y1="230" x2="113" y2="250"/>
+            <line x1="148" y1="170" x2="113" y2="150"/>
+          </g>
+
+          <!-- Pontos das ligações -->
+          <g fill="#c9b988">
+            <circle cx="200" cy="140" r="4"/>
+            <circle cx="252" cy="170" r="4"/>
+            <circle cx="252" cy="230" r="4"/>
+            <circle cx="200" cy="260" r="4"/>
+            <circle cx="148" cy="230" r="4"/>
+            <circle cx="148" cy="170" r="4"/>
+          </g>
+          <g fill="rgba(201, 185, 136, 0.6)">
+            <circle cx="200" cy="100" r="3"/>
+            <circle cx="287" cy="150" r="3"/>
+            <circle cx="287" cy="250" r="3"/>
+            <circle cx="200" cy="300" r="3"/>
+            <circle cx="113" cy="250" r="3"/>
+            <circle cx="113" cy="150" r="3"/>
+          </g>
+
+          <!-- Centro -->
+          <circle cx="200" cy="200" r="6" fill="#6fb55a"/>
+          <circle cx="200" cy="200" r="14" fill="none" stroke="#6fb55a" stroke-width="0.8" opacity="0.5"/>
+
+          <!-- Labels sutis -->
+          <text x="200" y="30" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Inter, sans-serif" letter-spacing="3">PROTOCOLO</text>
+          <text x="200" y="384" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Inter, sans-serif" letter-spacing="3">HEMP SYSTEM</text>
+        </svg>
+      </div>
+
+      <div class="protocolo-content reveal">
+        <span class="section-eyebrow">Diferencial Alpha Hemp</span>
+        <h2 class="section-title">Protocolo <em>Hemp System</em>.</h2>
+        <p>
+          Mais do que prescrever um óleo, conduzimos um <strong>processo terapêutico estruturado</strong> que considera o paciente em sua totalidade — não apenas o sintoma isolado.
+        </p>
+        <p>
+          Um método proprietário desenvolvido pela Alpha Hemp Brasil ao longo de anos de prática clínica e estudo aplicado da cannabis medicinal. <em>Resultados profundos, mensuráveis, duradouros.</em>
+        </p>
+
+        <div class="protocol-features">
+          <div class="protocol-feature">
+            <svg class="pf-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <div>
+              <h4>Diagnóstico completo</h4>
+              <p>Análise aprofundada do quadro clínico, histórico e objetivos terapêuticos.</p>
+            </div>
+          </div>
+          <div class="protocol-feature">
+            <svg class="pf-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <div>
+              <h4>Plano sob medida</h4>
+              <p>Protocolo individual construído com base no seu perfil — sem fórmulas genéricas.</p>
+            </div>
+          </div>
+          <div class="protocol-feature">
+            <svg class="pf-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <div>
+              <h4>Acompanhamento contínuo</h4>
+              <p>Ajustes, suporte e evolução monitorada ao longo de toda a sua jornada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="produtos" id="produtos">
+  <div class="container">
+    <span class="section-eyebrow">Linha exclusiva</span>
+    <h2 class="section-title">Produtos selecionados, <em>importados com curadoria</em>.</h2>
+    <p class="section-lead">Estoque limitado de produtos premium importados do Reino Unido, com laudo de pureza e procedência rastreável.</p>
+
+    <div class="produtos-grid">
+      <div class="produto-card reveal">
+        <div class="produto-visual">
+          <img src="assets/vitality-gummybears.png" alt="Vitality CBD Gummy Bears - 40 unidades" class="produto-img" loading="lazy">
+        </div>
+        <div class="produto-content">
+          <span class="produto-tag">Em estoque</span>
+          <h3>Vitality CBD Gummy Bears</h3>
+          <p class="desc">O jeito mais saboroso de usar seu CBD. Ursinhos de goma com dosagem precisa de 5mg por unidade — práticos, fáceis de dosar e deliciosamente frutados. Marca Vitality, importados do Reino Unido.</p>
+          <div class="produto-specs">
+            <span class="produto-spec">Vitality CBD</span>
+            <span class="produto-spec">40 gummies</span>
+            <span class="produto-spec">5mg / unidade</span>
+            <span class="produto-spec">Raspberry &amp; Orange</span>
+          </div>
+          <div class="produto-footer">
+            <span class="produto-price">Consultar valor</span>
+            <a href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Tenho%20interesse%20no%20*Vitality%20CBD%20Gummy%20Bears*%20(40%20gummies%20%C2%B7%205mg%20por%20unidade%20%C2%B7%20Raspberry%20%26%20Orange).%20Gostaria%20de%20saber%20o%20pre%C3%A7o%20e%20a%20disponibilidade." class="produto-cta" target="_blank" rel="noopener">Verificar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card reveal">
+        <div class="produto-visual">
+          <img src="assets/vitality-cbd-oil.png" alt="Vitality CBD Oral Drops & Spray - 2400mg com Turmeric, B12 e Vitamina D" class="produto-img" loading="lazy">
+        </div>
+        <div class="produto-content">
+          <span class="produto-tag">Última unidade</span>
+          <h3>Vitality CBD Oral Drops &amp; Spray</h3>
+          <p class="desc">Óleo CBD Full Spectrum em fusão com Turmeric (açafrão), Vitamina D e B12 — apoia digestão, sistema imunológico e articulações saudáveis. Inclui aplicador conta-gotas e spray oral. Alta concentração de 2400mg.</p>
+          <div class="produto-specs">
+            <span class="produto-spec">Vitality CBD</span>
+            <span class="produto-spec">30 ml</span>
+            <span class="produto-spec">2400 mg</span>
+            <span class="produto-spec">Citrus Flavour</span>
+            <span class="produto-spec">Drops + Spray</span>
+          </div>
+          <div class="produto-footer">
+            <span class="produto-price">Consultar valor</span>
+            <a href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Tenho%20interesse%20no%20*Vitality%20CBD%20Oral%20Drops%20%26%20Spray*%20(30ml%20%C2%B7%202400mg%20%C2%B7%20Turmeric%20%2B%20B12%20%2B%20Vitamina%20D%20%C2%B7%20%C3%BAltima%20unidade).%20Gostaria%20de%20saber%20o%20pre%C3%A7o%20e%20confirmar%20disponibilidade." class="produto-cta" target="_blank" rel="noopener">Verificar →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <span class="section-eyebrow">Consultoria especializada</span>
+    <h2 class="section-title">Escolha o caminho <em>certo para você</em>.</h2>
+    <p class="section-lead">Três modalidades de atendimento estruturadas para diferentes momentos da sua jornada com a cannabis medicinal.</p>
+
+    <div class="servicos-grid">
+      <div class="servico reveal">
+        <span class="servico-tag">Consulta rápida</span>
+        <h3>Express</h3>
+        <p class="desc">Tira-dúvidas direto e objetivo para quem já tem alguma experiência e precisa apenas de uma orientação pontual.</p>
+        <div class="price"><span class="currency">R$</span>150</div>
+        <button class="servico-cta" onclick="openQuiz()">Agendar Express</button>
+      </div>
+
+      <div class="servico highlight reveal">
+        <span class="servico-tag">Mais procurado</span>
+        <h3>Protocolo Hemp System</h3>
+        <p class="desc">A consultoria completa: diagnóstico aprofundado, plano terapêutico individual e acompanhamento contínuo. O método exclusivo da Alpha Hemp Brasil.</p>
+        <div class="price"><span class="currency">R$</span>400</div>
+        <button class="servico-cta" onclick="openQuiz()">Quero o Protocolo</button>
+      </div>
+
+      <div class="servico reveal">
+        <span class="servico-tag">Burocracia resolvida</span>
+        <h3>ANVISA Assessoria</h3>
+        <p class="desc">Conduzimos todo o processo de autorização junto à Anvisa, do início ao fim, com transparência total.</p>
+        <div class="price-consult">Sob consulta</div>
+        <button class="servico-cta" onclick="openQuiz()">Quero assessoria</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <span class="section-eyebrow">Dúvidas frequentes</span>
+    <h2 class="section-title">Tudo o que você precisa saber <em>antes de começar</em>.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          O tratamento com cannabis é mesmo legalizado no Brasil?
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Sim. Desde 2015, a Anvisa autoriza a importação de produtos derivados da cannabis para uso medicinal, mediante prescrição médica e autorização especial. A regulamentação foi aprofundada pela RDC 327/2019 e atualizada pela RDC 660/2022. Cuidamos de todo o processo burocrático.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          O óleo de cannabis causa dependência ou efeito psicoativo?
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Não. As formulações usadas no tratamento são controladas e específicas para uso terapêutico. A maioria é rica em CBD (canabidiol), que não possui efeito psicoativo e é reconhecido pela OMS como seguro e sem potencial de dependência.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Quanto tempo leva para o medicamento chegar?
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Após a consulta e aprovação da Anvisa (geralmente poucos dias úteis), a importação e entrega no seu endereço costuma acontecer em 15 a 25 dias úteis, dependendo da sua região no Brasil.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Qualquer médico pode prescrever?
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Sim, qualquer médico ou dentista com CRM/CRO ativo pode prescrever. Mas é fundamental que o profissional conheça profundamente o sistema endocanabinoide para indicar a dosagem correta. Nossa rede parceira conta com especialistas qualificados.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          O que diferencia o Protocolo Hemp System de uma consulta comum?
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>É um método proprietário desenvolvido pela Alpha Hemp Brasil que vai além da prescrição: considera o paciente em sua totalidade — quadro clínico, histórico e objetivos — e constrói um plano terapêutico individual com acompanhamento contínuo, não pontual.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" id="contato">
+  <div class="container">
+    <div class="cta-final-inner">
+      <span class="section-eyebrow">Pronto para começar</span>
+      <h2 class="section-title" style="margin: 0 auto 1.25rem; text-align: center;">Sua nova qualidade de vida começa com <em>uma conversa</em>.</h2>
+      <p>Preencha o formulário em menos de 2 minutos. Nossa equipe entra em contato pelo WhatsApp em poucas horas — sem compromisso, sem custo.</p>
+      <button class="btn-quiz" onclick="openQuiz()">
+        Fazer avaliação gratuita
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          Alpha <em>Hemp</em><span class="brasil">Brasil</span>
+        </a>
+        <p>Democratizando o acesso à cannabis medicinal no Brasil com ciência, ética e responsabilidade. Baseados em Alphaville/SP.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#jornada">Como funciona</a></li>
+          <li><a href="#indicacoes">Indicações</a></li>
+          <li><a href="#protocolo">Protocolo</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Conecte-se</h4>
+        <ul>
+          <li><a href="https://wa.me/5511924754748" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/alphahempbrasil" target="_blank" rel="noopener">@alphahempbrasil</a></li>
+          <li><a href="https://open.spotify.com/show/2dS19bZMxZJV1gjS5yiauk?si=oZPeoVAtR3ydlYzswmpbgA" target="_blank" rel="noopener">Podcast Spotify</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Anvisa RDC 660</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Alpha Hemp Brasil. Todos os direitos reservados.</span>
+      <span>Alphaville · SP · Brasil</span>
+    </div>
+
+    <p class="footer-disclaimer">
+      Aviso legal: O tratamento com canabinoides deve ser sempre acompanhado por um profissional médico habilitado. As informações deste site não substituem consulta médica e a Alpha Hemp Brasil não se responsabiliza por automedicação.
+    </p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Alpha%20Hemp%20e%20quero%20saber%20mais." class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="modal-backdrop" id="quizModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeQuiz()" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div class="modal-header">
+      <div class="modal-progress">
+        <div class="progress-dot active" data-step="1"></div>
+        <div class="progress-dot" data-step="2"></div>
+        <div class="progress-dot" data-step="3"></div>
+        <div class="progress-dot" data-step="4"></div>
+      </div>
+      <h3>Solicitação de Atendimento</h3>
+      <p>Preencha as informações abaixo para que nossa equipe possa direcionar o seu atendimento de forma ágil.</p>
+    </div>
+
+    <div class="modal-body">
+      <div class="quiz-step active" data-step="1">
+        <label class="quiz-label">Qual o seu interesse principal? <span class="req">*</span></label>
+        <div class="quiz-options" id="interesseOptions">
+          <button class="quiz-option" data-value="CBD"><span class="check"></span>CBD (Canabidiol)</button>
+          <button class="quiz-option" data-value="THC"><span class="check"></span>THC</button>
+          <button class="quiz-option" data-value="Consulta médica"><span class="check"></span>Consulta médica</button>
+          <button class="quiz-option" data-value="Habeas Corpus (HC)"><span class="check"></span>Habeas Corpus (HC)</button>
+          <button class="quiz-option" data-value="CBD para Pet"><span class="check"></span>CBD para Pet</button>
+          <button class="quiz-option" data-value="Protocolo Hemp System"><span class="check"></span>Protocolo Hemp System</button>
+          <button class="quiz-option" data-value="ANVISA Assessoria"><span class="check"></span>ANVISA Assessoria</button>
+          <button class="quiz-option" data-value="Produtos importados"><span class="check"></span>Produtos Vitality CBD (Gummy Bears / Oral Drops)</button>
+          <button class="quiz-option" data-value="Outras informações"><span class="check"></span>Outras informações</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="2">
+        <label class="quiz-label">Qual o motivo principal? <span class="req">*</span></label>
+        <div class="quiz-options" id="motivoOptions">
+          <button class="quiz-option" data-value="Dor crônica"><span class="check"></span>Dor crônica</button>
+          <button class="quiz-option" data-value="Ansiedade"><span class="check"></span>Ansiedade</button>
+          <button class="quiz-option" data-value="Insônia"><span class="check"></span>Insônia</button>
+          <button class="quiz-option" data-value="Inflamação"><span class="check"></span>Inflamação</button>
+          <button class="quiz-option" data-value="TDAH"><span class="check"></span>TDAH</button>
+          <button class="quiz-option" data-value="Depressão"><span class="check"></span>Depressão</button>
+          <button class="quiz-option" data-value="Autismo (TEA)"><span class="check"></span>Autismo (TEA)</button>
+          <button class="quiz-option" data-value="Epilepsia"><span class="check"></span>Epilepsia</button>
+          <button class="quiz-option" data-value="Parkinson"><span class="check"></span>Parkinson</button>
+          <button class="quiz-option" data-value="Fibromialgia"><span class="check"></span>Fibromialgia</button>
+          <button class="quiz-option" data-value="Câncer / Cuidados paliativos"><span class="check"></span>Câncer / Cuidados paliativos</button>
+          <button class="quiz-option" data-value="Doença autoimune"><span class="check"></span>Doença autoimune</button>
+          <button class="quiz-option" data-value="Saúde do pet"><span class="check"></span>Saúde do pet</button>
+          <button class="quiz-option" data-value="Outra condição"><span class="check"></span>Outra condição</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="3">
+        <label class="quiz-label">Já faz uso de medicamentos? <span class="req">*</span></label>
+        <div class="quiz-options two-col" id="medicamentoOptions">
+          <button class="quiz-option" data-value="Sim"><span class="check"></span>Sim</button>
+          <button class="quiz-option" data-value="Não"><span class="check"></span>Não</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-step="4">
+        <label class="quiz-label">Seus dados de contato <span class="req">*</span></label>
+        <input type="text" class="quiz-input" id="qNome" placeholder="Nome completo *" required>
+        <input type="email" class="quiz-input" id="qEmail" placeholder="E-mail *" required>
+        <div class="quiz-row">
+          <input type="tel" class="quiz-input" id="qTelefone" placeholder="Telefone (WhatsApp) *" required style="margin-bottom: 0;">
+          <input type="number" class="quiz-input" id="qIdade" placeholder="Idade" style="margin-bottom: 0;">
+        </div>
+        <input type="text" class="quiz-input" id="qInstagram" placeholder="Instagram @ (opcional)" style="margin-top: 1rem;">
+        <textarea class="quiz-textarea" id="qObs" placeholder="Algo mais que devamos saber? (opcional)"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="quiz-btn quiz-btn-prev" id="btnPrev" onclick="prevStep()" style="display: none;">← Voltar</button>
+      <button class="quiz-btn quiz-btn-next" id="btnNext" onclick="nextStep()" disabled>
+        Continuar
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+      <button class="quiz-btn quiz-btn-submit" id="btnSubmit" onclick="submitQuiz()" style="display: none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z"/></svg>
+        Enviar via WhatsApp
+      </button>
+    </div>
+
+    <p class="quiz-privacy">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Seus dados estão protegidos e criptografados.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+  // Fechar menu ao clicar fora
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('mobileMenu');
+    const toggle = document.getElementById('menuToggle');
+    if (menu && menu.classList.contains('open') && !menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href === '#' || href === '#!') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  let currentStep = 1;
+  const totalSteps = 4;
+  const quizData = { interesse: null, motivo: null, medicamento: null, nome: '', email: '', telefone: '', idade: '', instagram: '', obs: '' };
+
+  function openQuiz() {
+    document.getElementById('quizModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeQuiz() {
+    document.getElementById('quizModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('quizModal').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('quizModal')) closeQuiz();
+  });
+
+  function setupOptions(containerId, key) {
+    document.querySelectorAll('#' + containerId + ' .quiz-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#' + containerId + ' .quiz-option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        quizData[key] = btn.dataset.value;
+        document.getElementById('btnNext').disabled = false;
+      });
+    });
+  }
+  setupOptions('interesseOptions', 'interesse');
+  setupOptions('motivoOptions', 'motivo');
+  setupOptions('medicamentoOptions', 'medicamento');
+
+  function validateStep4() {
+    const nome = document.getElementById('qNome').value.trim();
+    const email = document.getElementById('qEmail').value.trim();
+    const tel = document.getElementById('qTelefone').value.trim();
+    return nome && email && tel;
+  }
+
+  ['qNome', 'qEmail', 'qTelefone'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      if (currentStep === 4) {
+        document.getElementById('btnSubmit').disabled = !validateStep4();
+      }
+    });
+  });
+
+  function showStep(step) {
+    document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+    document.querySelector('.quiz-step[data-step="' + step + '"]').classList.add('active');
+    document.querySelectorAll('.progress-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i < step);
+    });
+    document.getElementById('btnPrev').style.display = step > 1 ? 'inline-flex' : 'none';
+
+    if (step === totalSteps) {
+      document.getElementById('btnNext').style.display = 'none';
+      document.getElementById('btnSubmit').style.display = 'inline-flex';
+      document.getElementById('btnSubmit').disabled = !validateStep4();
+    } else {
+      document.getElementById('btnNext').style.display = 'inline-flex';
+      document.getElementById('btnSubmit').style.display = 'none';
+      const keys = ['interesse', 'motivo', 'medicamento'];
+      document.getElementById('btnNext').disabled = !quizData[keys[step - 1]];
+    }
+  }
+
+  function nextStep() {
+    if (currentStep < totalSteps) { currentStep++; showStep(currentStep); }
+  }
+  function prevStep() {
+    if (currentStep > 1) { currentStep--; showStep(currentStep); }
+  }
+
+  function submitQuiz() {
+    if (!validateStep4()) return;
+    quizData.nome = document.getElementById('qNome').value.trim();
+    quizData.email = document.getElementById('qEmail').value.trim();
+    quizData.telefone = document.getElementById('qTelefone').value.trim();
+    quizData.idade = document.getElementById('qIdade').value.trim();
+    quizData.instagram = document.getElementById('qInstagram').value.trim();
+    quizData.obs = document.getElementById('qObs').value.trim();
+
+    let msg = '*Solicitação de Atendimento — Alpha Hemp Brasil*%0A%0A';
+    msg += '*Nome:* ' + quizData.nome + '%0A';
+    msg += '*E-mail:* ' + quizData.email + '%0A';
+    msg += '*Telefone:* ' + quizData.telefone + '%0A';
+    if (quizData.idade) msg += '*Idade:* ' + quizData.idade + '%0A';
+    if (quizData.instagram) msg += '*Instagram:* ' + quizData.instagram + '%0A';
+    msg += '%0A*Interesse principal:* ' + quizData.interesse + '%0A';
+    msg += '*Motivo:* ' + quizData.motivo + '%0A';
+    msg += '*Faz uso de medicamentos:* ' + quizData.medicamento + '%0A';
+    if (quizData.obs) msg += '%0A*Observações:* ' + encodeURIComponent(quizData.obs);
+
+    window.open('https://wa.me/5511924754748?text=' + msg, '_blank');
+  }
+</script>
+
+</body>
+</html>
