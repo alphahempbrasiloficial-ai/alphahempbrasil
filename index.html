@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#101913">
+<title>Protocolo Hemp System · Tratamento com cannabis medicinal, conduzido de ponta a ponta | Alpha Hemp Brasil</title>
+<meta name="description" content="Condução 1:1 do tratamento com cannabis medicinal: consulta médica inclusa, ANVISA resolvida e acompanhamento contínuo. 100% dentro da lei (RDC 660/2022). Comece pela triagem gratuita de 2 minutos.">
+<meta property="og:title" content="Protocolo Hemp System · Alpha Hemp Brasil">
+<meta property="og:description" content="Do sono picotado ao tratamento legal com cannabis medicinal, sem travar em nenhuma etapa. Consulta médica e assessoria ANVISA inclusas. Triagem gratuita.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,420;0,9..144,560;1,9..144,340;1,9..144,420&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#101913;
+  --musgo:#1B2A20;
+  --musgo-2:#22352A;
+  --linho:#EDE7D8;
+  --linho-2:#DCD4C0;
+  --erva:#8FB49A;
+  --erva-dim:#5E7D69;
+  --ambar:#D8A648;
+  --ambar-2:#E7BC66;
+  --sinal:#5FA478;
+  --tinta:#1D2A22;
+  --borda:rgba(143,180,154,.18);
+  --raio:14px;
+  --max:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  background:var(--noite);
+  color:var(--linho);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:16px;line-height:1.65;
+  overflow-y:auto;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(84px + env(safe-area-inset-bottom));
+}
+::selection{background:var(--ambar);color:var(--noite)}
+img{max-width:100%;display:block}
+a{color:var(--ambar-2)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.narrow{max-width:720px}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:420;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,6.4vw,3.6rem);line-height:1.08}
+h2{font-size:clamp(1.6rem,4.6vw,2.4rem);line-height:1.15}
+h3{font-size:1.22rem;line-height:1.3}
+em, .it{font-style:italic;font-family:'Fraunces',Georgia,serif}
+h1 em,h2 em{color:var(--ambar-2)}
+p{max-width:62ch}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--erva);margin-bottom:16px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--erva-dim)}
+.muted{color:var(--erva)}
+.small{font-size:.85rem}
+section{padding:72px 0}
+@media(min-width:760px){section{padding:96px 0}}
+.divider{height:1px;background:var(--borda);max-width:var(--max);margin:0 auto}
+
+/* Header */
+header.top{
+  position:sticky;top:0;z-index:40;
+  background:rgba(16,25,19,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--borda);
+}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--linho);text-decoration:none}
+.logo b{font-weight:560}
+.logo em{color:var(--ambar-2)}
+.top a.mini{
+  font-size:.82rem;font-weight:600;text-decoration:none;color:var(--noite);
+  background:var(--ambar);padding:9px 16px;border-radius:999px;white-space:nowrap;
+}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;
+  text-decoration:none;border:none;cursor:pointer;
+  border-radius:999px;padding:17px 30px;transition:transform .15s ease, background .15s ease;
+  min-height:54px;width:100%;text-align:center;
+}
+@media(min-width:560px){.btn{width:auto}}
+.btn:active{transform:scale(.985)}
+.btn-gold{background:var(--ambar);color:var(--noite)}
+.btn-gold:hover{background:var(--ambar-2)}
+.btn-ghost{background:transparent;color:var(--linho);border:1px solid rgba(237,231,216,.28)}
+.btn-ghost:hover{border-color:var(--erva)}
+.btn-dark{background:var(--tinta);color:var(--linho)}
+.btn-note{font-size:.8rem;color:var(--erva);margin-top:10px}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{
+  font-size:.76rem;font-weight:600;color:var(--erva);
+  border:1px solid var(--borda);border-radius:999px;padding:7px 13px;
+  display:inline-flex;align-items:center;gap:6px;background:rgba(27,42,32,.5);
+}
+.chip svg{width:13px;height:13px;flex:none}
+
+/* Hero */
+.hero{padding:64px 0 72px;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;inset:auto -30% -55% -30%;height:70%;
+  background:radial-gradient(ellipse at center,rgba(95,164,120,.14),transparent 65%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;gap:44px;position:relative;z-index:1}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr;align-items:center}}
+.hero p.lead{font-size:1.08rem;color:var(--linho-2);margin-top:20px}
+.hero ul.wins{list-style:none;margin-top:24px;display:grid;gap:11px}
+.hero ul.wins li{display:flex;gap:11px;align-items:flex-start;font-size:.98rem;color:var(--linho-2)}
+.hero ul.wins li svg{width:19px;height:19px;flex:none;margin-top:3px;color:var(--sinal)}
+.hero-cta{margin-top:32px;display:flex;flex-direction:column;gap:12px}
+@media(min-width:560px){.hero-cta{flex-direction:row;align-items:center;gap:16px}}
+.price-tag{font-size:.9rem;color:var(--erva)}
+.price-tag b{color:var(--linho);font-size:1.02rem}
+
+/* Botanical plate (hero visual) */
+.plate{
+  border:1px solid var(--borda);border-radius:var(--raio);
+  background:linear-gradient(160deg,var(--musgo),var(--noite) 70%);
+  padding:30px 26px;position:relative;
+}
+.plate .lbl{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--erva)}
+.plate .big{font-family:'Fraunces',serif;font-size:2rem;color:var(--linho);margin:4px 0 2px}
+.plate .row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;padding-top:22px;border-top:1px dashed var(--borda)}
+.plate .row div p:first-child{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--ambar-2)}
+.plate .row div p:last-child{font-size:.78rem;color:var(--erva);margin-top:2px}
+.leafmark{position:absolute;top:18px;right:20px;width:34px;height:34px;color:var(--erva-dim);opacity:.8}
+
+/* Proof strip */
+.proof{border-block:1px solid var(--borda);background:var(--musgo);padding:34px 0}
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+@media(min-width:760px){.proof-grid{grid-template-columns:repeat(4,1fr)}}
+.proof-grid p.n{font-family:'Fraunces',serif;font-size:1.7rem;color:var(--linho)}
+.proof-grid p.d{font-size:.82rem;color:var(--erva);margin-top:3px;max-width:22ch}
+
+/* Pain list */
+.pain-list{list-style:none;display:grid;gap:14px;margin-top:34px}
+.pain-list li{
+  border:1px solid var(--borda);border-radius:var(--raio);
+  background:var(--musgo);padding:18px 20px;display:flex;gap:14px;align-items:flex-start;
+  font-size:.97rem;color:var(--linho-2);
+}
+.pain-list li span.dot{
+  flex:none;width:9px;height:9px;border-radius:50%;background:var(--ambar);margin-top:8px;
+}
+.callout{
+  margin-top:30px;border-left:3px solid var(--ambar);padding:6px 0 6px 18px;
+  font-family:'Fraunces',serif;font-style:italic;font-size:1.15rem;color:var(--linho);
+}
+
+/* Deliverables */
+.steps{display:grid;gap:16px;margin-top:40px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(2,1fr)}}
+.step{
+  border:1px solid var(--borda);border-radius:var(--raio);background:var(--musgo);
+  padding:26px 24px;position:relative;
+}
+.step .k{
+  font-family:'Fraunces',serif;font-style:italic;font-size:.95rem;color:var(--ambar-2);
+  display:block;margin-bottom:8px;
+}
+.step h3{color:var(--linho);margin-bottom:8px}
+.step p{font-size:.93rem;color:var(--erva);line-height:1.6}
+.step.wide{grid-column:1/-1}
+
+/* Timeline */
+.tl{list-style:none;margin-top:38px;display:grid;gap:0;position:relative}
+.tl li{display:grid;grid-template-columns:34px 1fr;gap:16px;padding-bottom:30px;position:relative}
+.tl li::before{
+  content:"";position:absolute;left:16px;top:34px;bottom:0;width:1px;background:var(--borda);
+}
+.tl li:last-child::before{display:none}
+.tl .num{
+  width:34px;height:34px;border-radius:50%;border:1px solid var(--erva-dim);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-size:.95rem;color:var(--erva);background:var(--noite);z-index:1;
+}
+.tl h3{font-size:1.05rem;color:var(--linho);margin-top:5px}
+.tl p{font-size:.92rem;color:var(--erva);margin-top:4px}
+
+/* Comparison */
+.compare{display:grid;gap:14px;margin-top:38px}
+@media(min-width:860px){.compare{grid-template-columns:repeat(3,1fr)}}
+.cmp{
+  border:1px solid var(--borda);border-radius:var(--raio);padding:26px 24px;background:var(--musgo);
+}
+.cmp.hl{border-color:rgba(216,166,72,.55);background:linear-gradient(170deg,var(--musgo-2),var(--musgo))}
+.cmp h3{margin-bottom:4px}
+.cmp p.sub{font-size:.82rem;color:var(--erva);margin-bottom:16px}
+.cmp ul{list-style:none;display:grid;gap:9px}
+.cmp li{display:flex;gap:9px;font-size:.9rem;color:var(--linho-2);align-items:flex-start}
+.cmp li svg{width:16px;height:16px;flex:none;margin-top:3px}
+.cmp li.no{color:var(--erva-dim)}
+.cmp li.no svg{color:var(--erva-dim)}
+.cmp li.yes svg{color:var(--sinal)}
+
+/* Receituario (offer) */
+.offer-wrap{position:relative}
+.receituario{
+  background:var(--linho);color:var(--tinta);border-radius:18px;
+  padding:38px 28px 34px;position:relative;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+}
+@media(min-width:760px){.receituario{padding:48px 46px 42px}}
+.receituario::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:6px;
+  background:repeating-linear-gradient(90deg,var(--ambar) 0 14px,transparent 14px 24px);
+  opacity:.85;
+}
+.rx-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.rx-head .id p:first-child{font-family:'Fraunces',serif;font-size:1.3rem}
+.rx-head .id p:last-child{font-size:.78rem;color:#5C6B60;letter-spacing:.05em}
+.selo{
+  flex:none;border:2px solid var(--sinal);color:#2E6B47;border-radius:10px;
+  padding:9px 13px;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  transform:rotate(3deg);text-align:center;line-height:1.5;background:rgba(95,164,120,.08);
+}
+.rx-items{list-style:none;margin:30px 0 8px;display:grid;gap:0}
+.rx-items li{
+  display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  padding:13px 0;border-bottom:1px dashed rgba(29,42,34,.22);font-size:.95rem;
+}
+.rx-items li span:last-child{font-weight:600;color:#5C6B60;white-space:nowrap;font-size:.88rem}
+.rx-total{display:flex;justify-content:space-between;padding:16px 0 6px;font-size:.95rem;color:#5C6B60}
+.rx-total b{text-decoration:line-through;text-decoration-color:rgba(29,42,34,.5)}
+.rx-price{
+  margin-top:14px;padding:22px;border-radius:14px;background:var(--tinta);color:var(--linho);
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;
+}
+.rx-price .p b{font-family:'Fraunces',serif;font-size:2.3rem;font-weight:560}
+.rx-price .p span{display:block;font-size:.82rem;color:var(--erva);margin-top:2px}
+.rx-ctas{margin-top:22px;display:flex;flex-direction:column;gap:12px}
+@media(min-width:560px){.rx-ctas{flex-direction:row}}
+.rx-foot{margin-top:18px;font-size:.78rem;color:#5C6B60;line-height:1.6}
+
+/* Quiz */
+.quiz-shell{
+  border:1px solid var(--borda);border-radius:18px;background:var(--musgo);
+  padding:34px 24px;margin-top:38px;
+}
+@media(min-width:760px){.quiz-shell{padding:44px 42px}}
+.q-progress{display:flex;gap:6px;margin-bottom:28px}
+.q-progress span{height:4px;flex:1;border-radius:99px;background:rgba(143,180,154,.2)}
+.q-progress span.on{background:var(--ambar)}
+.q-step{display:none}
+.q-step.on{display:block}
+.q-step .q-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--erva);margin-bottom:10px}
+.q-step h3{font-size:1.35rem;color:var(--linho);margin-bottom:22px}
+.q-opts{display:grid;gap:11px}
+.q-opt{
+  text-align:left;font-family:'Inter',sans-serif;font-size:.97rem;font-weight:500;color:var(--linho-2);
+  background:var(--noite);border:1px solid var(--borda);border-radius:12px;
+  padding:16px 18px;cursor:pointer;transition:border-color .12s ease, background .12s ease;
+  min-height:54px;width:100%;
+}
+.q-opt:hover{border-color:var(--erva)}
+.q-opt.sel{border-color:var(--ambar);background:var(--musgo-2);color:var(--linho)}
+.q-nav{display:flex;justify-content:space-between;align-items:center;margin-top:26px;gap:12px}
+.q-back{
+  background:none;border:none;color:var(--erva);font-size:.9rem;font-weight:600;cursor:pointer;
+  padding:12px 6px;font-family:'Inter',sans-serif;
+}
+.q-field{margin-bottom:16px}
+.q-field label{display:block;font-size:.82rem;font-weight:600;color:var(--erva);margin-bottom:7px}
+.q-field input{
+  width:100%;background:var(--noite);border:1px solid var(--borda);border-radius:12px;
+  color:var(--linho);font-size:1rem;padding:15px 16px;font-family:'Inter',sans-serif;
+  min-height:52px;
+}
+.q-field input:focus{outline:2px solid var(--ambar);outline-offset:1px;border-color:transparent}
+.q-error{display:none;color:#E4A08A;font-size:.85rem;margin-top:10px}
+.q-error.on{display:block}
+.q-done{display:none;text-align:center;padding:20px 0 6px}
+.q-done.on{display:block}
+.q-done .ok{
+  width:56px;height:56px;border-radius:50%;background:rgba(95,164,120,.15);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 18px;color:var(--sinal);
+}
+.q-done h3{margin-bottom:10px}
+.q-done p{margin:0 auto 22px;color:var(--erva);font-size:.95rem}
+
+/* Testimonials */
+.quotes{display:grid;gap:16px;margin-top:38px}
+@media(min-width:760px){.quotes{grid-template-columns:1fr 1fr}}
+.quote{
+  border:1px solid var(--borda);border-radius:var(--raio);background:var(--musgo);padding:28px 26px;
+}
+.quote .stars{color:var(--ambar);letter-spacing:3px;font-size:.85rem;margin-bottom:14px}
+.quote p.t{font-family:'Fraunces',serif;font-style:italic;font-size:1.06rem;color:var(--linho);line-height:1.55}
+.quote p.w{margin-top:16px;font-size:.82rem;color:var(--erva)}
+
+/* Bio */
+.bio{display:grid;gap:32px;margin-top:38px}
+@media(min-width:860px){.bio{grid-template-columns:.9fr 1.1fr;align-items:center}}
+.bio-photo{
+  border:1px solid var(--borda);border-radius:var(--raio);aspect-ratio:4/5;
+  background:linear-gradient(165deg,var(--musgo-2),var(--noite));
+  display:flex;align-items:flex-end;padding:22px;
+}
+.bio-photo p{font-size:.78rem;color:var(--erva-dim)}
+.bio-cred{list-style:none;display:grid;gap:11px;margin-top:22px}
+.bio-cred li{display:flex;gap:11px;font-size:.93rem;color:var(--linho-2);align-items:flex-start}
+.bio-cred li svg{width:17px;height:17px;flex:none;margin-top:3px;color:var(--ambar)}
+
+/* FAQ */
+.faq{margin-top:36px;display:grid;gap:12px}
+.faq details{
+  border:1px solid var(--borda);border-radius:var(--raio);background:var(--musgo);overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+  padding:19px 22px;font-weight:600;font-size:.98rem;color:var(--linho);min-height:54px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary span.ic{color:var(--erva);font-family:'Fraunces',serif;font-size:1.3rem;line-height:1;transition:transform .18s ease}
+.faq details[open] summary span.ic{transform:rotate(45deg)}
+.faq .a{padding:0 22px 20px;font-size:.93rem;color:var(--erva);line-height:1.7;max-width:66ch}
+
+/* Final CTA */
+.final{
+  text-align:center;border-top:1px solid var(--borda);
+  background:radial-gradient(ellipse at 50% 0%,rgba(216,166,72,.08),transparent 60%);
+}
+.final ul{list-style:none;display:inline-grid;gap:10px;margin:26px auto 30px;text-align:left}
+.final li{display:flex;gap:10px;font-size:.95rem;color:var(--linho-2);align-items:flex-start}
+.final li svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--sinal)}
+.final .btns{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center}
+@media(min-width:560px){.final .btns{flex-direction:row}}
+
+/* Footer */
+footer{border-top:1px solid var(--borda);padding:44px 0 26px}
+footer .f-brand{font-family:'Fraunces',serif;font-size:1.05rem;margin-bottom:14px}
+footer p.legal{font-size:.76rem;color:var(--erva-dim);line-height:1.7;max-width:78ch}
+footer p.legal + p.legal{margin-top:10px}
+
+/* Sticky bottom bar */
+.stickybar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:rgba(16,25,19,.94);backdrop-filter:blur(12px);
+  border-top:1px solid var(--borda);
+  padding:12px 18px calc(12px + env(safe-area-inset-bottom));
+  transform:translateY(110%);transition:transform .25s ease;
+}
+.stickybar.on{transform:translateY(0)}
+.sb-in{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.sb-in .sp b{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--linho)}
+.sb-in .sp span{display:block;font-size:.72rem;color:var(--erva)}
+.sb-in a{
+  flex:none;background:var(--ambar);color:var(--noite);text-decoration:none;font-weight:700;
+  font-size:.92rem;border-radius:999px;padding:13px 22px;min-height:48px;
+  display:inline-flex;align-items:center;
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#topo"><b>Alpha</b> <em>Hemp</em> Brasil</a>
+    <a class="mini" href="#triagem">Triagem gratuita</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Protocolo Hemp System · Condução 1:1</span>
+      <h1>Volte a dormir sem virar refém da tarja preta. <em>Dentro da lei.</em></h1>
+      <p class="lead">A condução completa do tratamento com cannabis medicinal: consulta médica inclusa, toda a parte da ANVISA resolvida por nós e acompanhamento contínuo — do primeiro contato até o produto na sua casa.</p>
+      <ul class="wins">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Dormir de novo, com a mente mais calma e organizada</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Tratar com segurança jurídica e respaldo médico de verdade</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Sair da burocracia da ANVISA sem travar em nenhuma etapa</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Ser conduzido por quem atravessou a mesma insônia na própria pele</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#triagem">Fazer minha triagem gratuita</a>
+        <p class="price-tag">2 minutos · sem compromisso<br><b>Protocolo completo: R$ 400</b> tudo incluso</p>
+      </div>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% dentro da lei · RDC 660/2022</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Respaldo médico</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg>Showroom em Alphaville · desde 2014</span>
+      </div>
+    </div>
+    <div class="plate">
+      <svg class="leafmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C7 8 4 12 4 16a8 8 0 0 0 16 0c0-4-3-8-8-14z"/><path d="M12 22V8"/></svg>
+      <p class="lbl">O caminho, resumido</p>
+      <p class="big serif">Escuta <em class="it">→</em> Médico <em class="it">→</em> ANVISA <em class="it">→</em> Casa</p>
+      <p class="small muted">Você não procura frasco, não decifra norma, não anda sozinho. A condução é nossa.</p>
+      <div class="row">
+        <div><p>+870 mil</p><p>brasileiros já tratam com cannabis medicinal</p></div>
+        <div><p>Laudo COA</p><p>produtos importados com procedência comprovada</p></div>
+        <div><p>Consulta inclusa</p><p>médico parceiro, sem cobrança à parte</p></div>
+        <div><p>1:1</p><p>online ou presencial em Alphaville/SP</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof">
+  <div class="wrap proof-grid">
+    <div><p class="n">+660 mil</p><p class="d">autorizações de importação emitidas pela ANVISA desde 2015</p></div>
+    <div><p class="n">+554%</p><p class="d">crescimento das prescrições de cannabis no Brasil</p></div>
+    <div><p class="n">2014</p><p class="d">ano em que a operação Alpha começou em Alphaville</p></div>
+    <div><p class="n">21 a 58</p><p class="d">faixa de idade de quem chega: sono, ansiedade, dor, foco</p></div>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Isso é pra você?</span>
+    <h2>Se você se reconhece aqui, é <em>pra você.</em></h2>
+    <ul class="pain-list">
+      <li><span class="dot"></span>Você não dorme direito há anos e já se conformou que "é assim mesmo".</li>
+      <li><span class="dot"></span>Sua cabeça não desliga — são mil pensamentos na hora de deitar.</li>
+      <li><span class="dot"></span>Você já toma (ou tem medo de tomar) tarja preta só pra conseguir apagar.</li>
+      <li><span class="dot"></span>Tem vontade de tentar cannabis medicinal, mas trava no medo, no estigma e na burocracia.</li>
+      <li><span class="dot"></span>Já gastou tempo e dinheiro com ansiedade, dor ou TDAH — e nada segurou.</li>
+    </ul>
+    <p class="callout">Você não precisa achar o frasco certo. Precisa de um caminho — e de alguém que já passou por ele.</p>
+    <div class="hero-cta" style="margin-top:34px">
+      <a class="btn btn-ghost" href="#triagem">Descobrir meu caminho em 2 minutos</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DELIVERABLES -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">O que você recebe</span>
+    <h2 class="narrow">Condução de <em>ponta a ponta.</em> Cinco entregas, um caminho.</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="k">01 · Escuta</span>
+        <h3>Escuta completa</h3>
+        <p>Entendo você inteiro: corpo, mente, rotina, medos, a vida sem dormir. Não só o sintoma.</p>
+      </div>
+      <div class="step">
+        <span class="k">02 · Mapa</span>
+        <h3>Mapa do desequilíbrio</h3>
+        <p>Onde o problema se manifesta no seu corpo, ancorado na função dos receptores CB1 e CB2 do sistema endocanabinoide. O mapa visual + o porquê científico.</p>
+      </div>
+      <div class="step">
+        <span class="k">03 · Caminho</span>
+        <h3>Consulta médica inclusa</h3>
+        <p>Avaliação com médico parceiro habilitado, que define o tratamento e emite a prescrição. O produto entra aqui, como consequência — nunca como ponto de partida.</p>
+      </div>
+      <div class="step">
+        <span class="k">04 · Acesso</span>
+        <h3>ANVISA resolvida por nós</h3>
+        <p>Autorização de importação, receita, procedência com laudo COA. Tudo conduzido pra você não travar no processo.</p>
+      </div>
+      <div class="step wide">
+        <span class="k">05 · Acompanhamento</span>
+        <h3>Eu não sumo depois</h3>
+        <p>Ajuste de rota, presença, condução contínua no WhatsApp. É exatamente o que a plataforma fria não faz — e o que faz o tratamento dar certo, no princípio "start low, go slow".</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Como funciona, na prática</span>
+    <h2>Cinco passos. Você nunca <em>anda sozinho.</em></h2>
+    <ol class="tl">
+      <li><span class="num">1</span><div><h3>Triagem gratuita</h3><p>Você responde 4 perguntas rápidas aqui na página e a gente conversa no WhatsApp — sem compromisso.</p></div></li>
+      <li><span class="num">2</span><div><h3>Escuta e mapa</h3><p>Sessão 1:1 (online ou em Alphaville). Eu monto seu mapa e desenho o caminho com você.</p></div></li>
+      <li><span class="num">3</span><div><h3>Consulta médica</h3><p>O respaldo médico entra com a avaliação e a prescrição — já incluída no valor.</p></div></li>
+      <li><span class="num">4</span><div><h3>ANVISA e acesso</h3><p>Eu cuido da autorização, da importação e da chegada do produto certo, com laudo, na sua casa.</p></div></li>
+      <li><span class="num">5</span><div><h3>Acompanhamento</h3><p>A gente ajusta junto, ao longo do tratamento. Presença contínua até o resultado.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMPARISON -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Por que a condução</span>
+    <h2 class="narrow">Três jeitos de começar. Só um tem <em>alguém junto.</em></h2>
+    <div class="compare">
+      <div class="cmp">
+        <h3>Sozinho</h3>
+        <p class="sub">Pesquisando por conta</p>
+        <ul>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>Meses perdido entre normas, fóruns e produto duvidoso</li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>Risco de comprar sem procedência e sem respaldo</li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>Ninguém pra ajustar dose e ritmo</li>
+        </ul>
+      </div>
+      <div class="cmp">
+        <h3>Plataforma fria</h3>
+        <p class="sub">Consulta avulsa online</p>
+        <ul>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Você consegue uma receita</li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>Fica sozinho com a burocracia da ANVISA depois</li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>Acompanhamento zero entre uma consulta e outra</li>
+        </ul>
+      </div>
+      <div class="cmp hl">
+        <h3>Protocolo Hemp System</h3>
+        <p class="sub">Condução completa 1:1</p>
+        <ul>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Escuta, método e consulta médica inclusas</li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>ANVISA, importação e laudo resolvidos por nós</li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Acompanhamento contínuo até o resultado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="oferta">
+  <div class="wrap narrow offer-wrap">
+    <span class="eyebrow">A oferta</span>
+    <h2>Tudo incluso. <em>Sem surpresa</em> no final.</h2>
+    <div class="receituario" style="margin-top:36px">
+      <div class="rx-head">
+        <div class="id">
+          <p class="serif">Protocolo Hemp System</p>
+          <p>ALPHA HEMP BRASIL · ALPHAVILLE/SP · DESDE 2014</p>
+        </div>
+        <div class="selo">Dentro da lei<br>RDC 660/2022 · ANVISA</div>
+      </div>
+      <ul class="rx-items">
+        <li><span>Escuta completa + mapa individual (condução 1:1)</span><span>R$ 200</span></li>
+        <li><span>Consulta com médico parceiro habilitado</span><span>R$ 180</span></li>
+        <li><span>Assessoria ANVISA completa (autorização + importação)</span><span>R$ 180</span></li>
+        <li><span>Acompanhamento contínuo no WhatsApp</span><span>R$ 150</span></li>
+      </ul>
+      <div class="rx-total"><span>Somando tudo separado</span><b>R$ 710</b></div>
+      <div class="rx-price">
+        <div class="p">
+          <b>R$ 400</b>
+          <span>tudo incluso · em até 12x no cartão ou Pix</span>
+        </div>
+      </div>
+      <div class="rx-ctas">
+        <a class="btn btn-gold" id="cta-pay" href="#" target="_blank" rel="noopener">Começar minha condução</a>
+        <a class="btn btn-dark" id="cta-wa-offer" href="#" target="_blank" rel="noopener">Falar no WhatsApp antes</a>
+      </div>
+      <p class="rx-foot">Consulta médica e assessoria ANVISA já inclusas — você não paga nada por fora. O investimento no produto é definido na consulta, conforme a prescrição do médico. Imprevisto acontece: a primeira sessão pode ser remarcada sem custo.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- QUIZ / TRIAGEM -->
+<section id="triagem">
+  <div class="wrap narrow">
+    <span class="eyebrow">Triagem gratuita · 2 minutos</span>
+    <h2>Antes de qualquer pagamento: <em>me conta o seu caso.</em></h2>
+    <p class="muted" style="margin-top:14px">Quatro perguntas rápidas. No final, você recebe o direcionamento do seu caminho direto no WhatsApp — sem compromisso e sem cadastro chato.</p>
+
+    <div class="quiz-shell">
+      <div class="q-progress" id="qProgress">
+        <span class="on"></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="q-step on" data-step="0">
+        <p class="q-label">Pergunta 1 de 4</p>
+        <h3>O que mais te incomoda hoje?</h3>
+        <div class="q-opts" data-q="incomodo">
+          <button type="button" class="q-opt">Sono ruim ou insônia</button>
+          <button type="button" class="q-opt">Ansiedade / cabeça que não desliga</button>
+          <button type="button" class="q-opt">Dor crônica</button>
+          <button type="button" class="q-opt">Foco / TDAH / hiperatividade</button>
+          <button type="button" class="q-opt">Outro motivo</button>
+        </div>
+      </div>
+
+      <div class="q-step" data-step="1">
+        <p class="q-label">Pergunta 2 de 4</p>
+        <h3>Há quanto tempo você convive com isso?</h3>
+        <div class="q-opts" data-q="tempo">
+          <button type="button" class="q-opt">Menos de 6 meses</button>
+          <button type="button" class="q-opt">De 6 meses a 3 anos</button>
+          <button type="button" class="q-opt">Mais de 3 anos</button>
+        </div>
+      </div>
+
+      <div class="q-step" data-step="2">
+        <p class="q-label">Pergunta 3 de 4</p>
+        <h3>Você já usou cannabis medicinal?</h3>
+        <div class="q-opts" data-q="experiencia">
+          <button type="button" class="q-opt">Nunca usei</button>
+          <button type="button" class="q-opt">Já usei, mas sem receita</button>
+          <button type="button" class="q-opt">Já tratei com receita médica</button>
+        </div>
+      </div>
+
+      <div class="q-step" data-step="3">
+        <p class="q-label">Pergunta 4 de 4</p>
+        <h3>Você já tem receita médica?</h3>
+        <div class="q-opts" data-q="receita">
+          <button type="button" class="q-opt">Ainda não tenho</button>
+          <button type="button" class="q-opt">Sim, já tenho receita</button>
+        </div>
+      </div>
+
+      <div class="q-step" data-step="4">
+        <p class="q-label">Último passo</p>
+        <h3>Pra onde eu envio o seu direcionamento?</h3>
+        <div class="q-field">
+          <label for="qNome">Seu nome</label>
+          <input type="text" id="qNome" autocomplete="name" placeholder="Como você quer ser chamado(a)">
+        </div>
+        <div class="q-field">
+          <label for="qZap">Seu WhatsApp</label>
+          <input type="tel" id="qZap" autocomplete="tel" inputmode="tel" placeholder="(11) 90000-0000">
+        </div>
+        <button type="button" class="btn btn-gold" id="qSubmit" style="width:100%">Receber meu caminho no WhatsApp</button>
+        <p class="q-error" id="qError">Preencha seu nome e um WhatsApp válido pra gente continuar.</p>
+        <p class="small muted" style="margin-top:14px">Seus dados são usados só pra este atendimento. Nada de spam.</p>
+      </div>
+
+      <div class="q-done" id="qDone">
+        <div class="ok"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Triagem recebida.</h3>
+        <p>Abrindo seu WhatsApp com o resumo do seu caso. Se não abrir sozinho, toque no botão abaixo.</p>
+        <a class="btn btn-gold" id="qDoneWa" href="#" target="_blank" rel="noopener">Abrir meu WhatsApp</a>
+      </div>
+
+      <div class="q-nav" id="qNav">
+        <button type="button" class="q-back" id="qBack" style="visibility:hidden">← Voltar</button>
+        <span class="small muted">Gratuito · sem compromisso</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Quem já foi conduzido</span>
+    <h2>Histórias de quem <em>voltou a dormir.</em></h2>
+    <div class="quotes">
+      <div class="quote">
+        <p class="stars">★★★★★</p>
+        <p class="t">"Passando para agradecer: tive uma grande evolução com o uso. Melhorou muito a minha hiperatividade e a noite de sono. Hoje consigo realmente ter qualidade de sono."</p>
+        <p class="w">P. · hiperatividade e sono</p>
+      </div>
+      <div class="quote">
+        <p class="stars">★★★★★</p>
+        <p class="t">"Melhorou muito. Tô conseguindo dormir melhor e não acordo tão cansado como antes. Não vivo sem."</p>
+        <p class="w">L. · insônia</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:18px">Depoimentos reais de pessoas conduzidas. Resultados variam de caso a caso — todo tratamento é definido e acompanhado por médico.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BIO -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Quem conduz</span>
+    <h2 class="narrow">Não nasci especialista. <em>Nasci insone.</em></h2>
+    <div class="bio">
+      <div class="bio-photo">
+        <p>[Foto do Leo no showroom — trocar o fundo deste bloco pela imagem real]</p>
+      </div>
+      <div>
+        <p style="color:var(--linho-2)">Eu não dormia desde que me entendo por gente — ia deitar 4, 5, 6 da manhã, e todo mundo dizia que era "normal". Até a cannabis medicinal me dar a leveza que eu não sabia que existia.</p>
+        <p style="color:var(--linho-2);margin-top:14px">Hoje eu conduzo outras pessoas pelo mesmo caminho que atravessei. Minha autoridade não vem de diploma médico — esse papel é dos profissionais habilitados que trabalham comigo. A minha vem da vivência real e de uma operação de verdade.</p>
+        <ul class="bio-cred">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg>Operação física em Alphaville desde 2014 — endereço, equipe, showroom</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Médico parceiro habilitado em todas as conduções</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Importação regularizada com laudos — representante de marca internacional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Condução 1:1, online ou presencial · @consultorcannabicobrasil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Dúvidas</span>
+    <h2>O que todo mundo pergunta <em>antes.</em></h2>
+    <div class="faq">
+      <details>
+        <summary>Isso é maconha? Vou ficar chapado?<span class="ic">+</span></summary>
+        <p class="a">Não. O foco é o CBD, que não causa o efeito do uso recreativo. Quando o THC entra, é em dose terapêutica e sempre com prescrição e acompanhamento médico. É tratamento, não barato.</p>
+      </details>
+      <details>
+        <summary>É legalizado? Vou ter problema?<span class="ic">+</span></summary>
+        <p class="a">Sim, é dentro da lei. O tratamento com cannabis medicinal é regulamentado pela ANVISA (RDC 660/2022 e RDC 1.015/2026) e sempre acontece com prescrição médica. Toda a parte de autorização e importação é conduzida por nós — você fica 100% regularizado.</p>
+      </details>
+      <details>
+        <summary>Por que R$ 400? Consulta avulsa custa menos.<span class="ic">+</span></summary>
+        <p class="a">Porque você não está comprando uma receita. A consulta avulsa te dá um papel e te deixa sozinho com a burocracia. O Protocolo inclui escuta, método, a própria consulta médica, toda a assessoria ANVISA e o acompanhamento contínuo — somado separado, passa de R$ 700.</p>
+      </details>
+      <details>
+        <summary>A consulta médica e a ANVISA são cobradas à parte?<span class="ic">+</span></summary>
+        <p class="a">Não. Está tudo incluído nos R$ 400. A única coisa fora é o produto em si, cujo valor depende da prescrição do médico — e isso a gente te mostra com transparência total na condução, com laudo e procedência.</p>
+      </details>
+      <details>
+        <summary>Funciona pro meu caso? (dor crônica, ansiedade, TDAH...)<span class="ic">+</span></summary>
+        <p class="a">A porta de entrada é a insônia e a cabeça que não desliga, mas a condução atende dor crônica, ansiedade, TDAH e outros casos. É exatamente pra isso que existe a triagem gratuita: na escuta a gente entende o seu.</p>
+      </details>
+      <details>
+        <summary>Moro longe de Alphaville. E aí?<span class="ic">+</span></summary>
+        <p class="a">A condução funciona 100% online, pra qualquer lugar do Brasil — consulta por telemedicina tem o mesmo valor legal da presencial, e o produto chega na sua casa. Quem é da região pode preferir o presencial no showroom.</p>
+      </details>
+      <details>
+        <summary>Posso parcelar?<span class="ic">+</span></summary>
+        <p class="a">Sim: em até 12x no cartão, ou à vista no Pix. O link de pagamento é seguro (Mercado Pago).</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap narrow">
+    <span class="eyebrow" style="justify-content:center">Última coisa</span>
+    <h2>Você passou anos achando que era normal.<br><em>Não precisa passar mais um.</em></h2>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>De volta pro sono, com a cabeça mais calma</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Tratamento seguro, dentro da lei, com respaldo médico</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Consulta médica e ANVISA já inclusas</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Conduzido por quem viveu a mesma coisa</li>
+    </ul>
+    <div class="btns">
+      <a class="btn btn-gold" href="#triagem">Começar pela triagem gratuita</a>
+      <a class="btn btn-ghost" id="cta-wa-final" href="#" target="_blank" rel="noopener">Falar direto no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="f-brand"><b>Alpha</b> <em class="it" style="color:var(--ambar-2)">Hemp</em> Brasil · Protocolo Hemp System</p>
+    <p class="legal">O Protocolo Hemp System é um serviço de escuta, direcionamento, assessoria de acesso e acompanhamento. Não substitui consulta, prescrição ou acompanhamento médico — a avaliação clínica e a prescrição são realizadas exclusivamente por profissional de saúde habilitado. Esta página não comercializa nem anuncia produtos de Cannabis ao público: o acesso a qualquer produto ocorre somente mediante prescrição médica, conforme a regulamentação vigente da ANVISA (RDC 660/2022 e RDC 1.015/2026). Esta página não promete cura.</p>
+    <p class="legal">Alpha Hemp Brasil · Alphaville, Barueri/SP · @consultorcannabicobrasil · Condução conforme o princípio "start low, go slow".</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="stickybar" id="stickyBar" aria-hidden="true">
+  <div class="sb-in">
+    <div class="sp"><b>R$ 400</b><span>tudo incluso · consulta médica + ANVISA</span></div>
+    <a href="#triagem">Triagem gratuita</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =============== CONFIG =============== */
+  var CONFIG = {
+    whatsapp: "5511924754748",
+    /* ATENCAO: confirme se este link do Mercado Pago cobra R$400.
+       Ele foi criado originalmente para o Mapa (R$197). Se cobrar 197,
+       gere um novo link de R$400 no Mercado Pago e cole aqui. */
+    payLink: "https://mpago.la/2aKS1TM",
+    formEndpoint: "https://formsubmit.co/ajax/alphagalerie@gmail.com",
+    price: "R$ 400"
+  };
+
+  function waLink(msg){
+    return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+  }
+
+  /* Static CTAs */
+  var payBtn = document.getElementById("cta-pay");
+  if(payBtn){ payBtn.setAttribute("href", CONFIG.payLink); }
+
+  var waOffer = document.getElementById("cta-wa-offer");
+  if(waOffer){
+    waOffer.setAttribute("href", waLink("Ola, Leo! Estou na pagina do Protocolo Hemp System (" + CONFIG.price + ") e quero tirar uma duvida antes de comecar."));
+  }
+  var waFinal = document.getElementById("cta-wa-final");
+  if(waFinal){
+    waFinal.setAttribute("href", waLink("Ola, Leo! Vim pela pagina do Protocolo Hemp System e quero conversar sobre o meu caso."));
+  }
+
+  /* =============== QUIZ =============== */
+  var answers = { incomodo:"", tempo:"", experiencia:"", receita:"" };
+  var current = 0;
+  var TOTAL = 5;
+
+  var steps = Array.prototype.slice.call(document.querySelectorAll(".q-step"));
+  var dots = Array.prototype.slice.call(document.querySelectorAll("#qProgress span"));
+  var backBtn = document.getElementById("qBack");
+  var navRow = document.getElementById("qNav");
+  var doneBox = document.getElementById("qDone");
+  var errorBox = document.getElementById("qError");
+
+  function show(step){
+    current = step;
+    steps.forEach(function(el, i){
+      if(i === step){ el.classList.add("on"); } else { el.classList.remove("on"); }
+    });
+    dots.forEach(function(d, i){
+      if(i <= step){ d.classList.add("on"); } else { d.classList.remove("on"); }
+    });
+    backBtn.style.visibility = step === 0 ? "hidden" : "visible";
+  }
+
+  document.querySelectorAll(".q-opts").forEach(function(group){
+    var key = group.getAttribute("data-q");
+    group.querySelectorAll(".q-opt").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        group.querySelectorAll(".q-opt").forEach(function(b){ b.classList.remove("sel"); });
+        btn.classList.add("sel");
+        answers[key] = btn.textContent.trim();
+        window.setTimeout(function(){
+          if(current < TOTAL - 1){ show(current + 1); }
+        }, 220);
+      });
+    });
+  });
+
+  backBtn.addEventListener("click", function(){
+    if(current > 0){ show(current - 1); }
+  });
+
+  var submitBtn = document.getElementById("qSubmit");
+  submitBtn.addEventListener("click", function(){
+    var nome = document.getElementById("qNome").value.trim();
+    var zap = document.getElementById("qZap").value.trim();
+    var digits = zap.replace(/\D/g, "");
+    if(!nome || digits.length < 10){
+      errorBox.classList.add("on");
+      return;
+    }
+    errorBox.classList.remove("on");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando...";
+
+    var resumo =
+      "Ola, Leo! Fiz a triagem gratuita do Protocolo Hemp System.\n" +
+      "Nome: " + nome + "\n" +
+      "O que mais incomoda: " + (answers.incomodo || "nao informado") + "\n" +
+      "Ha quanto tempo: " + (answers.tempo || "nao informado") + "\n" +
+      "Experiencia com cannabis medicinal: " + (answers.experiencia || "nao informado") + "\n" +
+      "Ja tem receita: " + (answers.receita || "nao informado") + "\n" +
+      "Quero receber meu direcionamento.";
+
+    var url = waLink(resumo);
+
+    function finish(){
+      steps.forEach(function(el){ el.classList.remove("on"); });
+      navRow.style.display = "none";
+      document.getElementById("qProgress").style.display = "none";
+      doneBox.classList.add("on");
+      document.getElementById("qDoneWa").setAttribute("href", url);
+      window.open(url, "_blank");
+    }
+
+    /* Envia o lead por e-mail (nao bloqueia o fluxo se falhar) */
+    var payload = {
+      origem: "LP Protocolo Hemp System",
+      nome: nome,
+      whatsapp: zap,
+      incomodo: answers.incomodo,
+      tempo: answers.tempo,
+      experiencia: answers.experiencia,
+      receita: answers.receita,
+      _subject: "Novo lead - Triagem Protocolo Hemp"
+    };
+    var doneCalled = false;
+    function once(){ if(!doneCalled){ doneCalled = true; finish(); } }
+
+    try{
+      fetch(CONFIG.formEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload)
+      }).then(once).catch(once);
+      window.setTimeout(once, 2500);
+    } catch(e){
+      once();
+    }
+  });
+
+  /* =============== STICKY BAR =============== */
+  var bar = document.getElementById("stickyBar");
+  var hero = document.querySelector(".hero");
+  var quiz = document.getElementById("triagem");
+
+  function onScroll(){
+    var past = window.scrollY > (hero ? hero.offsetHeight : 500);
+    var q = quiz.getBoundingClientRect();
+    var quizVisible = q.top < window.innerHeight && q.bottom > 0;
+    if(past && !quizVisible){
+      bar.classList.add("on");
+      bar.setAttribute("aria-hidden", "false");
+    } else {
+      bar.classList.remove("on");
+      bar.setAttribute("aria-hidden", "true");
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
